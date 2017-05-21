@@ -3350,7 +3350,7 @@ static void ro_ch_handler(_adapter *padapter)
 
 	rtw_cfg80211_remain_on_channel_expired(padapter,
 	                                       pcfg80211_wdinfo->remain_on_ch_cookie,
-	                                       &pcfg80211_wdinfo->remain_on_ch_channel,
+	                                       pcfg80211_wdinfo->remain_on_ch_channel,
 	                                       pcfg80211_wdinfo->remain_on_ch_type, GFP_KERNEL);
 
 	_func_exit_;
